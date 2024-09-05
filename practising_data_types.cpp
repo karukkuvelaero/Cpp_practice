@@ -9,7 +9,7 @@ int main ()
 {
     std::cout<<io<<std::endl;
     std::cout<<std::setprecision(10);
-    std::cout<<std::numeric_limits<long double>::digits10<<std::endl;
+    std::cout<<std::numeric_limits <long double>::digits10<<std::endl;
     std::cout<<low<<std::endl;
     std::cout<<love<<std::endl;
 
