@@ -36,3 +36,34 @@ Output: [0,1]
 
 */
 
+#include <iostream>
+
+int target;
+
+int main ()
+{
+    int arr[]= {1,2,3,4,5};
+    std::cout<<"Enter the target"<<std::endl;
+    std::cin>>target;
+    bool state=false;
+    
+    for(int i=0; i<5 ; i++)
+    {
+        for(int j=i+1; j<5 ; j++)
+        {
+            if (arr[i]+arr[j]==target)
+            {
+                std::cout<<"pairs are"<<arr[i]<<" & "<<arr[j]<<std::endl;
+                state = 1;
+                            
+            }
+           
+        }
+        if (state)
+        {
+            break;
+        }
+    }
+    std::cout<<"Out of loop"<<std::endl;
+    return 0;
+}
