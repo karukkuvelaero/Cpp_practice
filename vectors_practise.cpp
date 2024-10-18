@@ -6,6 +6,7 @@ function= practise problems for vectors
 
 #include <iostream>
 #include <vector>
+#include <algorithm>
 int main ()
 {
     /*
@@ -43,25 +44,47 @@ int main ()
     /*
     Problem 2 : Vect1 = {1,2,3,4,5}
                 Vect2 = {11,12,13,14,15}
+                Swap elements between these vectors
+            
     */
    std::vector<int> Vect1 = {1,2,3,4,5};
    std::vector<int> Vect2 = {11,12,13,14,15};
 
-    std::vector<int>::iterator it1;
-    std::vector<int>::iterator it2;
-
-    it1 = Vect1.begin();
-    it2 = Vect2.begin();
-
-    if (Vect1.size()==Vect2.size())
+    swap(Vect1,Vect2);
+    std::cout<<"Vect1 is ";
+    for (int i : Vect1)
     {
-        for(i=0; i<Vect1.size(); i++)
-        {
-            
-        }
+        std::cout<<i<<", ";   
+    }
+    std::cout<<"\nVect2 is ";
+    for (int i : Vect2)
+    {
+        std::cout<<i<<", ";
     }
 
+    /*
+    Problem 3 : Write a program to sort the vector
+                V= {10,2,-1,4,79,60}
+    */
 
+   std::vector<int> Final_vector = {10,2,-1,4,79,60};
+
+   std::cout<<"\nBefore sorting:";
+   for (auto i : Final_vector)
+   {
+    std::cout<<i<<", ";
+   }
+   
+   std::sort(Final_vector.begin(),Final_vector.end());
+
+   std::cout<<"\nAfter sorting:";
+   for (auto i : Final_vector)
+   {
+    std::cout<<i<<", ";
+   }
+   std::cout<<std::endl;
     return 0;
+
+    
 
 }
