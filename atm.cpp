@@ -1,6 +1,13 @@
 #include <iostream>
 #include <string>
 
+/*Mini Project -ATM
+  -> Check Balance
+  -> Cash withdraw
+  -> User Details
+  -> Update Mobile No.
+*/
+
 class Account_Details
 {
     private:
@@ -49,8 +56,19 @@ int main ()
 {
     Account_Details user1;
     user1.setData(245675,"Abi", 4562, 9566124589, 4000);
+
     
-    std::cout<<"Welcome to ATM"<<std::endl;
+    do
+    {
+        exit = true;
+        std::cout<<"Welcome to ATM"<<std::endl;
+        std::cout<<"Enter your Choice\n"
+                 <<"1. Check_Balance\n"
+                 <<"2. Cash withdraw\n"
+                 <<"User Details"
+    } while (exit == false);
+    
+    
     std::cout<<user1.Check_Balance();
     std::cout<<user1.Withdrawal(1000);
     return 0;
