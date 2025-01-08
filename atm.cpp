@@ -55,18 +55,40 @@ int main ()
 
 {
     Account_Details user1;
-    user1.setData(245675,"Abi", 4562, 9566124589, 4000);
+    Account_Details user2;
 
-    
+    user1.setData(245675,"Abi", 4562, 9566124589, 4000);
+    user2.setData(123456,"ABC", 1234, 1234567890, 6000);
+
+    std::cout<<"Select user:\n"
+             <<user1.user_name;
+    bool exit_condition = true;
     do
     {
-        exit = true;
+        char choice;
+        
         std::cout<<"Welcome to ATM"<<std::endl;
         std::cout<<"Enter your Choice\n"
                  <<"1. Check_Balance\n"
                  <<"2. Cash withdraw\n"
-                 <<"User Details"
-    } while (exit == false);
+                 <<"3. Show User Details\n"
+                 <<"4. Update Mobile no.\n"
+                 <<"5. Exit\n";
+        std::cin>>choice;
+        switch (choice)
+        {
+        case '1':
+            /* code */
+            break;
+        case '5':
+            exit_condition = false;
+            break;
+        default:
+            std::cout<<"Please enter a valid input"<<std::endl;
+            
+        }
+        
+    } while (exit_condition);
     
     
     std::cout<<user1.Check_Balance();
