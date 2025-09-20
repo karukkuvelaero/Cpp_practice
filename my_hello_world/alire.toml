@@ -1,0 +1,12 @@
+name = "my_hello_world"
+description = "hello,greeting"
+version = "0.1.0-dev"
+
+authors = ["Karukkuvel "]
+maintainers = ["Karukkuvel  <d.karukkuvelraj@gmail.com>"]
+maintainers-logins = ["karukkuvelaero"]
+licenses = "BSD-3-Clause"
+website = ""
+tags = []
+
+executables = ["my_hello_world"]
