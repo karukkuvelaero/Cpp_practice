@@ -1,0 +1,12 @@
+name = "calculator"
+description = "calculator"
+version = "0.1.0-dev"
+
+authors = ["Karukkuvel "]
+maintainers = ["Karukkuvel  <d.karukkuvelraj@gmail.com>"]
+maintainers-logins = ["karukkuvelaero"]
+licenses = "MIT OR Apache-2.0 WITH LLVM-exception"
+website = ""
+tags = ["1"]
+
+executables = ["calculator"]
